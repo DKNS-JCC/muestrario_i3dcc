@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Muestrario Colores y Materiales</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .color-card {
+      border-radius: 0.75rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .color-card:hover {
+      transform: translateY(-4px) scale(1.03);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .section {
+      animation: fadeInUp 0.6s ease both;
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-slate-100 to-slate-200 text-slate-800 antialiased">
+  <header class="bg-gradient-to-r from-cyan-600 to-indigo-600 text-white shadow-lg">
+    <div class="max-w-5xl mx-auto p-6 text-center">
+      <h1 class="text-4xl font-extrabold">Muestrario de Colores y Materiales</h1>
+      <p class="text-sm opacity-90 mt-2">Disponibles para impresión 3D</p>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto p-6 space-y-12">
+    <!-- PLA -->
+    <section class="section">
+      <h2 class="text-3xl font-bold mb-2">PLA (Ácido Poliláctico)</h2>
+      <p class="text-slate-600 mb-6">Filamentos de PLA son excelentes para impresiones visuales y prototipos rápidos. Resistencia moderada pero precio asequible.</p>
+      <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-4">
+        <div class="h-20 flex items-center justify-center bg-white color-card">Blanco</div>
+        <div class="h-20 flex items-center justify-center bg-black text-white color-card">Negro</div>
+        <div class="h-20 flex items-center justify-center bg-yellow-400 color-card">Amarillo</div>
+        <div class="h-20 flex items-center justify-center bg-blue-500 text-white color-card">Azul</div>
+        <div class="h-20 flex items-center justify-center bg-red-500 text-white color-card">Rojo</div>
+        <div class="h-20 flex items-center justify-center bg-purple-600 text-white color-card">Morado</div>
+        <div class="h-20 flex items-center justify-center color-card" style="background-color: #b87333;">Cobre</div>
+        <div class="h-20 flex items-center justify-center color-card" style="background-color: #39ff14;">Verde Flúor</div>
+        <div class="h-20 flex items-center justify-center text-white color-card" style="background-color: #1a472a;">Verde Galaxia</div>
+        <div class="h-20 flex items-center justify-center bg-gray-300 color-card">Mármol</div>
+        <div class="h-20 flex items-center justify-center bg-orange-500 text-white color-card">Naranja</div>
+        <div class="h-20 flex items-center justify-center color-card" style="background-color: gold;">Dorado</div>
+        <div class="h-20 flex items-center justify-center text-white color-card" style="background-color: #000080;">Azul Marino</div>
+        <div class="h-20 flex items-center justify-center color-card" style="background-color: #f3e5ab;">Amarillo Vainilla</div>
+      </div>
+    </section>
+
+    <!-- PETG -->
+    <section class="section">
+      <h2 class="text-3xl font-bold mb-2">PETG (Tereftalato Polietileno)</h2>
+      <p class="text-slate-600 mb-6">Material con mayor resistencia al impacto, alta adherencia de capas y resistencia a químicos.</p>
+      <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-4">
+        <div class="h-20 flex items-center justify-center bg-white color-card">Blanco Hielo</div>
+        <div class="h-20 flex items-center justify-center bg-black text-white color-card">Negro</div>
+      </div>
+    </section>
+
+    <!-- ASA -->
+    <section class="section">
+      <h2 class="text-3xl font-bold mb-2">ASA</h2>
+      <p class="text-slate-600 mb-6">Alta resistencia mecánica y durabilidad al exterior y productos químicos.</p>
+      <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-4">
+        <div class="h-20 flex items-center justify-center bg-black text-white color-card">Negro Azabache</div>
+      </div>
+    </section>
+
+    <!-- TPU -->
+    <section class="section">
+      <h2 class="text-3xl font-bold mb-2">TPU (Poliuretano Termoplástico)</h2>
+      <p class="text-slate-600 mb-6">Material elástico, gran resistencia a la rotura y recuperación de forma original.</p>
+      <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-4">
+        <div class="h-20 flex items-center justify-center bg-black text-white color-card">Negro (Shore 95A)</div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="mt-12 py-6 bg-slate-800 text-white text-center shadow-inner">
+    © Impresion3DCC — Muestrario de Colores y Materiales 3D
+  </footer>
+</body>
+</html>
